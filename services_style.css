@@ -1,0 +1,186 @@
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f2;
+}
+
+header {
+    background-color: #d26a22;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #a01515;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #d26a22;
+    border-radius: 30px;
+}
+
+.offer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offer-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.offer-list li i {
+    margin-right: 10px;
+}
+
+.offer {
+    margin-left: 38px; 
+}
+
+.note {
+    color: #a01515;
+    font-weight: normal;
+    font-size: 20px;  
+}
+
+.arrow{
+    text-align: left;  
+    margin-top: 20px;   
+}
+
+.arrow i {
+    font-size: 40px;  
+    color: #2f6122;  
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #d26a22, #8a441e);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    transform: scale(1.05);
+}
+
+.btn-tile {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-tile:hover {
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    transform: scale(1.05);
+}
+
+.order {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #a01515;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+select, textarea, input[type="checkbox"], input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.quantity-btn {
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    transform: scale(1.05);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="radio"] + label:before {
+    content: '📦';
+    margin-right: 10px;
+}

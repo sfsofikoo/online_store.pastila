@@ -1,14 +1,16 @@
-<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Портфоліо</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо | Натуральна пастила</title>
+    <link rel="stylesheet" href="portfolio_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header>
-        <h1>Портфоліо</h1>
+        <h1>Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Домашня</a></li>
@@ -19,11 +21,76 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Наші роботи</h2>
-            <p>Фотографії та відгуки наших клієнтів.</p>
+        <section class="info">
+            <h2>Натуральна пастила — 13 унікальних смаків 🍏</h2>
+            <p>Наша пастила виготовляється на основі яблучного пюре, без додавання цукру та консервантів, що робить пастилу корисною
+                 (з смаками ви зможете ознайомитись та обрати їх при замовленні).</p>
         </section>
+        <section class="gallery">
+            <h2>Фото нашої пастили</h2>
+            <div class="gallery-container">
+                <img src="pastila1.jpg" alt="Пастила фруктова">
+                <img src="pastila2.jpg" alt="Асорті пастили">
+                <img src="pastila3.jpg" alt="Набір пастили">
+                <img src="pastila4.jpg" alt="пастила">
+                <img src="pastila7.jpg" alt="пастила">
+                <img src="pastila8.jpg" alt="пастила">
+            </div>
+        </section>
+        <section class="pricing">
+            <h2>Прайс</h2>
+            <p>Ціна по грамажу та стандартних наборів:</p>
+            <ul>
+                <li><strong>100 г пастили</strong> — <span>130 грн</span></li>
+                <li><strong>Маленький набір</strong> — <span>200 грн</span></li>
+                <li><strong>Великий набір</strong>— <span>300 грн</span></li>
+            </ul>
+            <p>Також можна придбати пастилу по штучно та обрати будь-який смак:</p>
+            <ul>
+                <li><strong>1 шт.</strong> — <span>15 грн</span></li>
+            </ul>
+            <p class="highlight-text">На замовлення ви можете придбати набори з асорті які є завжди в наявності або ж обрати бажані вами смаки які ви хочете бачити в своєму наборі!</p>
+        </section>
+        <section class="reviews">
+            <h2>Відгуки наших клієнтів 💬</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <img class="avatar" src="avatar1.jpg" alt="User 1">
+                    <div class="stars">★★★★★</div>
+                    <p>"Чудовий сервіс, дуже задоволен смаком, неймовірна насолода корисним продуктом!"</p>
+                    <div class="username">Марина К.</div>
+                </div>
+            
+                <div class="review">
+                    <img class="avatar" src="avatar2.jpg" alt="User 2">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Якість на висоті, але хотілося б трішки швидшу доставку."</p>
+                    <div class="username">Олександр П.</div>
+                </div>
+            
+                <div class="review">
+                    <img class="avatar" src="avatar3.jpg" alt="User 3">
+                    <div class="stars">★★★★★</div>
+                    <p>"Все супер! Це дуже смачно, раджу всім. Замовлятиму ще раз."</p>
+                    <img class="review-photo" src="pastila5.jpg" alt="Результат">
+                    <div class="username">Вікторія М.</div>
+                </div>
+                <div class="review">
+                    <img class="avatar" src="avatar4.jpg" alt="User 3">
+                    <div class="stars">★★★★★</div>
+                    <p>"Дуууже смачно, неможливо відірватись і сервіс чудовий. Замовляйте!"</p>
+                    <img class="review-photo" src="pastila6.jpg" alt="Результат">
+                    <div class="username">Світлана П.</div>
+                </div>
+            </div>
+        </section>
+        <div class="order-btn">
+            <a href="services.html" class="btn">Зробити замовлення</a>
+        </div>
+
     </main>
+
 </body>
 </html>

@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6bf89;
+}
+
+header {
+    background-color: #d26a22;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #a01515;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #d26a22;
+    border-radius: 30px;
+}
+
+.highlight-text {
+    font-size: 18px; 
+    color: #a01515; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.info, .gallery, .pricing, .reviews {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pricing ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.pricing ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.pricing span {
+    color: #a01515;
+    font-weight: bold;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.review {
+    background: #fff3cd;
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.review .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #d26a22;
+}
+
+.stars {
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review .username {
+    font-weight: bold;
+    color: #d26a22;
+    margin-top: 5px;
+}
+
+.review-photo {
+    width: 200px;
+    height: 230px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.order-btn {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #d26a22, #8a441e);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    transform: scale(1.05);
+}
+
+.btn-tile {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-tile:hover {
+    background: linear-gradient(135deg, #8a441e, #d26a22);
+    transform: scale(1.05);
+}

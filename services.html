@@ -1,14 +1,15 @@
-<!-- services.html -->
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Послуги</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Послуги</h1>
+        <h1>Services</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Домашня</a></li>
@@ -19,11 +20,117 @@
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section>
-            <h2>Що ми пропонуємо?</h2>
-            <p>Ми виготовляємо та продаємо пастилу, пропонуємо доставку та гуртові замовлення.</p>
+        <section class="offer">
+            <h2>Додаткові пропозиції від нашого магазину:</h2>
+            <ul class="offer-list">
+                <li><i class="fas fa-gift"></i> При покупці продукції на 1000 грн і більше доставка безкоштовна</li>
+                <li><i class="fas fa-percent"></i> При покупці 20 і більше одиниць товару різного масштабу надаємо знижку -10%</li>
+                <li><i class="fas fa-share-alt"></i> При відмітці нашого магазину у соцмережах надаємо знижку -5%</li>
+            </ul>
+            <p class="note"><strong>Примітка:</strong> У наших соцмережах ми часто проводимо розіграші для наших підписників, тож підписуйся щоб не пропускати їх!</p>
+            <p class="note">Посилання на сторінки можеш знайти ось тут</p>
+            <div class="arrow">
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            <a href="contacts.html" class="btn">Зв'язатись з нами</a>
+        </section>
+
+        <section class="order">
+            <h2>Оформити замовлення</h2>
+            <form action="#" method="POST">
+                <label for="flavor">Виберіть смак:</label>
+                <select id="flavor" name="flavor">
+                    <option value="apple">Яблуко</option>
+                    <option value="strawberry">Полуниця</option>
+                    <option value="plum">Слива</option>
+                    <option value="currant">Смородина</option>
+                    <option value="raspbbery">Малина</option>
+                    <option value="banana">Банан</option>
+                    <option value="cherry">Вишня</option>
+                    <option value="blueberry">Чорниця</option>
+                    <option value="cranberry">Журавлина</option>
+                    <option value="lemon+ginger">Лимон + імбир</option>
+                    <option value="spinach">Шпинат</option>
+                    <option value="pumpkin">Гарбуз</option>
+                    <option value="mix">Асорті(всі смаки пастили)</option>
+                </select>
+
+                <fieldset>
+                    <legend>Вибір кількості продукції:</legend>
+                    <label>
+                        <input type="checkbox" name="product" value="100g_pastila">
+                        100 г пастили
+                        <button type="button" class="quantity-btn">+</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="quantity-btn">-</button>
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="product" value="small_set">
+                        Маленький набір
+                        <button type="button" class="quantity-btn">+</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="quantity-btn">-</button>
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="product" value="large_set">
+                        Великий набір
+                        <button type="button" class="quantity-btn">+</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="quantity-btn">-</button>
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="product" value="single_piece">
+                        По штучно
+                        <button type="button" class="quantity-btn">+</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="quantity-btn">-</button>
+                    </label>
+                </fieldset>
+
+                <label for="comments">Додаткові побажання щодо декору упаковки:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <fieldset>
+                    <legend>Спосіб оплати:</legend>
+                    <label>
+                        <input type="radio" name="payment" value="cash_on_delivery" checked>
+                        Оплата при отриманні
+                    </label><br>
+                    <label>
+                        <input type="radio" name="payment" value="online_payment">
+                        Оплата карткою онлайн
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Спосіб доставки:</legend>
+                    <label>
+                        <input type="radio" name="delivery" value="self_pickup" checked>
+                        Самовивіз (місто Хмельницький)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="delivery" value="nova_poshta">
+                        Доставка новою поштою
+                    </label><br>
+                    <label>
+                        <input type="radio" name="delivery" value="ukr_poshta">
+                        Доставка укр поштою
+                    </label><br>
+                    <label>
+                        <input type="radio" name="delivery" value="meest">
+                        Доставка поштою Meest
+                    </label><br>
+                </fieldset>
+
+                <button type="button" class="btn" onclick="alert('Ваше замовлення успішно оформлено!')">Оформити замовлення</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Магазин пастили. Всі права захищені.</p>
+    </footer>
 </body>
 </html>
